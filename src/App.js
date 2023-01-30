@@ -1,4 +1,5 @@
 import Todo from "./components/Todo";
+import Layout from "./components/layout/Layout";
 import { Route, Routes, Switch } from "react-router-dom";
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
@@ -7,14 +8,13 @@ import MainNavigation from "./components/layout/MainNavigation";
 
 function App() {
   return (
-    <div>
-      <MainNavigation></MainNavigation>
+    <Layout>
       <Routes>
         <Route path="/" element={<AllMeetupsPage />} />
         <Route path="/new-meetup" element={<NewMeetupPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
       </Routes>
-    </div>
+    </Layout>
   );
 }
 
