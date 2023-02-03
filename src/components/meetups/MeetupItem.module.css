@@ -1,5 +1,5 @@
 .item {
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .image {
@@ -26,8 +26,10 @@
 }
 
 .actions {
-  padding: 1.5rem;
+  padding: 10px 20px;
   text-align: center;
+
+  /* display: inline-block; */
 }
 
 .actions button {
@@ -38,6 +40,7 @@
   background-color: transparent;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
+  /* display: inline-block; */
 }
 
 .actions button:hover,
